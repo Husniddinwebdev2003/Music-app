@@ -15,6 +15,7 @@ const Layout = () => {
     return (
         <>
             <Nav 
+                setData={setData}
                 seetNavShow={seetNavShow}
                 navShow={navShow}/>
             <main className={classes.Main}>
