@@ -1,0 +1,73 @@
+.Players {
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+
+.SongInfo {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    margin: 0 auto;
+}
+
+.SongInfo p {
+    font-size: 14px;
+}
+
+.SongInfo input {
+    display: inline-block;
+    width: 230px;
+    margin: 0 20px;
+}
+.SongsControlIcon  {
+    padding: 1.4rem 0;
+    display: flex;
+    width: 330px;
+    margin: 0 auto; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+
+.SongsControlIcon svg {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.SongsControlIcon span:nth-child(3) {
+    margin: 0 4rem;
+}
+
+.SongsControlIcon span {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ResIcon {
+    display: inline-block;
+}
+
+.ResIcon.Active  {
+    color: rgb(0, 195, 255);
+}
+
+
+@media (max-width: 400px) {
+    .Players {
+        transform: scaleX(.8);
+    }
+}
+
+@media (max-width: 350px) {
+    .Players {
+        transform: scaleX(.7);
+    }
+}
+
+@media (max-width: 290px) {
+    .Players {
+        transform: scaleX(.6);
+    }
+}

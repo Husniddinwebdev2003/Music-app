@@ -1,0 +1,136 @@
+.Library {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 150vh;
+    background: #fff;
+    padding: 0;
+    border-right: 1px solid rgba(110, 110, 110, 0.459);
+    box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.Library.Active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.Library h1 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: start;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+
+.LibraryConent::-webkit-scrollbar {
+    width: 7px;
+}
+
+.LibraryConent::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.LibraryConent:hover::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.342);
+}
+
+.LibraryConent:hover::-webkit-scrollbar-thumb {
+    background: rgba(0, 217, 255, 0.288) !important;
+    border-radius: 10px;
+}
+
+.LibraryConent {
+    min-width: 80%;
+    padding: 0 1rem;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.MusicItem img {
+    width: 60px;
+    margin-right: 20px;
+    flex-basis: 10%;
+}
+
+.MusicItem {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    justify-content: start;
+    height: 60px;
+}
+
+.MusicItem:hover {
+    background: #ebebeb;
+}
+
+.MusicItem.Active {
+    background-color: rgba(0, 174, 255, 0.432);
+}
+
+.MusicItemDesc {
+    text-align: start !important;
+    position: relative;
+    width: 90%;
+    flex-basis: 90%;
+    z-index: 99;
+}
+
+.MusicItemDesc h3 {
+    font-size: .9rem;
+    margin: 0 0 10px 0;
+}
+
+.MusicItemDesc h4 {
+    font-size: .7rem;
+}
+
+.MusicItemDesc h3,.MusicItemDesc  h4 {
+    color: #696969;
+}
+
+.OnMusic {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.Close {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    .Library {
+        width: 30%;
+    }
+}
+
+@media (max-width: 760px) {
+    .Library {
+        width: 100%;
+    }
+
+    .MusicItemDesc .OnMusic{
+        right: 2rem;
+    }
+}

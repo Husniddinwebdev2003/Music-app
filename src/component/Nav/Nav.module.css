@@ -1,0 +1,46 @@
+.Nav {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    height: 10vh;
+}
+
+.Title h3{
+    color: rgb(71, 71, 71);
+}
+
+.MenuBtn button {
+    padding:  7px 10px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 183, 255);
+    color: #fff;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.MenuBtn button:active {
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 760px) {
+    .Nav {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .Nav {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Nav {
+        width: 50%;
+    }
+}
