@@ -1,0 +1,30 @@
+.Dfc {
+    min-height: 60vh;
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+
+.SongImg {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.SongImg > img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.SongName {
+    padding: 2.4rem 0;
+}
+
+.SongName h2 {
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.SongArtist h3 {
+    font-size: 17px;
+    font-family: sans-serif;
+}
