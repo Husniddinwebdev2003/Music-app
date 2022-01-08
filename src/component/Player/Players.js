@@ -37,14 +37,14 @@ const Players = ({songs, setSongs, data, navShow, seetNavShow}) => {
                         let ind = index + 1;
                         if(ind < data.length) {
                             const selectData = [data[ind]];
-                            setSongs(selectData);
+                            return setSongs(selectData);
                         } else {
                             const selectData = [data[0]];
-                            setSongs(selectData);
+                            return setSongs(selectData);
                         }
-                        setOffMusic(onMusic);
                     }
                 });
+                setOffMusic(onMusic);
                 if(onMusic === false) {
                     setTimeout(() => {
                         audioOn.current.play();
@@ -73,14 +73,14 @@ const Players = ({songs, setSongs, data, navShow, seetNavShow}) => {
                 let ind = index + 1;
                 if(ind < data.length) {
                     const selectData = [data[ind]];
-                    setSongs(selectData);
+                    return setSongs(selectData);
                 } else {
                     const selectData = [data[0]];
-                    setSongs(selectData);
+                    return setSongs(selectData);
                 }
-                setOffMusic(onMusic);
             }
         });
+        setOffMusic(onMusic);
         if(onMusic === false) {
             setTimeout(() => {
                 audioOn.current.play();
@@ -94,14 +94,14 @@ const Players = ({songs, setSongs, data, navShow, seetNavShow}) => {
                 let ind = index - 1;
                 if(ind < data.length && ind > -1) {
                     const selectData = [data[ind]];
-                    setSongs(selectData);
+                    return setSongs(selectData);
                 } else {
                     const selectData = [data[(data.length - 1)]];
-                    setSongs(selectData);
+                    return setSongs(selectData);
                 }
-                setOffMusic(onMusic);
             }
         });
+        setOffMusic(onMusic);
         if(onMusic === false) {
             setTimeout(() => {
                 audioOn.current.play();
