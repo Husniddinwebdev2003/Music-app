@@ -68,7 +68,7 @@
     margin-top: 1rem;
     cursor: pointer;
     transition: all .3s ease;
-    justify-content: start;
+    justify-content: flex-start;
     height: 60px;
 }
 
