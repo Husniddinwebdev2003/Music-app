@@ -9,12 +9,13 @@ import classes from "./Layout.module.css";
 
 
 const Layout = () => {
-    const [data, setData] = useState(Data)
+    const [data, setData] = useState(Data);
     const [songs, setSongs] = useState(data);
     const [navShow, seetNavShow] = useState(false);
     return (
         <>
             <Nav 
+                setData={setData}
                 seetNavShow={seetNavShow}
                 navShow={navShow}/>
             <main className={classes.Main}>

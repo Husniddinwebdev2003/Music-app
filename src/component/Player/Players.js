@@ -37,11 +37,15 @@ const Players = ({songs, setSongs, data, navShow, seetNavShow}) => {
                         let ind = index + 1;
                         if(ind < data.length) {
                             const selectData = [data[ind]];
-                            return setSongs(selectData);
+                            setSongs(selectData);
+                            return songs;
                         } else {
                             const selectData = [data[0]];
-                            return setSongs(selectData);
+                            setSongs(selectData);
+                            return songs;
                         }
+                    } else {
+                        return "";
                     }
                 });
                 setOffMusic(onMusic);
@@ -68,18 +72,23 @@ const Players = ({songs, setSongs, data, navShow, seetNavShow}) => {
     // Next and prev music control
 
     const nextMusicHendler = () => {
-        data.filter((item, index) => { 
+        data.map((item, index) => { 
             if(item.id === songs.id) {
                 let ind = index + 1;
                 if(ind < data.length) {
                     const selectData = [data[ind]];
-                    return setSongs(selectData);
+                    setSongs(selectData);
+                    return songs;
                 } else {
                     const selectData = [data[0]];
-                    return setSongs(selectData);
+                    setSongs(selectData);
+                    return songs;
                 }
+            }else {
+                return "";
             }
         });
+        
         setOffMusic(onMusic);
         if(onMusic === false) {
             setTimeout(() => {
@@ -89,17 +98,21 @@ const Players = ({songs, setSongs, data, navShow, seetNavShow}) => {
     }
 
     const prevMusicHendler = () => {
-        data.filter((item, index) => { 
-            if(item.id === songs.id) {
-                let ind = index - 1;
-                if(ind < data.length && ind > -1) {
-                    const selectData = [data[ind]];
-                    return setSongs(selectData);
+        data.map((item, index) => { 
+                if(item.id === songs.id) {
+                    let ind = index - 1;
+                    if(ind < data.length && ind > -1) {
+                        const selectData = [data[ind]];
+                        setSongs(selectData);
+                        return songs;
+                    } else {
+                        const selectData = [data[(data.length - 1)]];
+                        setSongs(selectData);
+                        return songs;
+                    }
                 } else {
-                    const selectData = [data[(data.length - 1)]];
-                    return setSongs(selectData);
+                    return "";
                 }
-            }
         });
         setOffMusic(onMusic);
         if(onMusic === false) {
