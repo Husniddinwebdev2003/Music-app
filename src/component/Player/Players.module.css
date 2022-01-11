@@ -55,19 +55,49 @@
 
 
 @media (max-width: 400px) {
-    .Players {
-        transform: scaleX(.8);
+    .SongInfo {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+    .SongInfo input {
+        width: 80%;
+    }
+
+    .SongsControlIcon {
+        width: 100%;
+        padding: 1.4rem 2rem;
     }
 }
 
 @media (max-width: 350px) {
-    .Players {
-        transform: scaleX(.7);
+    .SongInfo {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+    .SongInfo input {
+        width: 80%;
+    }
+
+    .SongsControlIcon {
+        width: 100%;
+        padding: 1.4rem 1.5rem;
     }
 }
 
 @media (max-width: 290px) {
-    .Players {
-        transform: scaleX(.6);
+    .SongInfo {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+    .SongInfo input {
+        width: 80%;
+    }
+
+    .SongsControlIcon {
+        width: 100%;
+        padding: 1.4rem 1.5rem;
+    }
+    .SongsControlIcon span:nth-child(3) {
+        margin: 0 5%;
     }
 }

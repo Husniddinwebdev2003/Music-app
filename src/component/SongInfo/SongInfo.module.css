@@ -28,3 +28,16 @@
     font-size: 17px;
     font-family: sans-serif;
 }
+
+@media (max-width: 290px) { 
+    .SongName h2 {
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .SongArtist h3 {
+        font-size: 14px;
+        font-family: sans-serif;
+
+    }
+}

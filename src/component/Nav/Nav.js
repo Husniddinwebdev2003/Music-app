@@ -7,7 +7,7 @@ const Nav = ({seetNavShow, navShow}) =>  {
     return (
         <nav className={classes.Nav}>
             <div className={classes.Title}>
-                <h3>Waves</h3>
+                    <h3>Waves</h3>
             </div>
             <div className={classes.MenuBtn}>
                 <button onClick={() => seetNavShow(!navShow)}>Library <FaMusic /></button>
